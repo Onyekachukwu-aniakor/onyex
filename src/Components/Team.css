@@ -1,0 +1,30 @@
+.execos{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.exe img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+
+}
+.exe{
+    flex-basis: 22%;
+}
+@media (max-width:650px) {
+
+    .execos{
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .exe{
+        margin-bottom: 0.7rem;
+    }
+    
+}

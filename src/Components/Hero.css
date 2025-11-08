@@ -1,0 +1,54 @@
+.hero{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url("../assets/images/teampic1.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-name{
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+    border: 2px solid ;
+    font-size: clamp(1.8rem,7.7vw,6rem);
+    font-weight: bolder;
+    font-style: italic;
+    background-image: url("../assets/images/img12.png");
+
+    background-size: contain ;
+    background-repeat: repeat;
+    background-clip: text;
+    color: transparent;
+    /* background-blend-mode: multiply; */
+}
+
+@media (max-width:850px) {
+    
+    .hero-name{
+    font-size: 35px;
+    }
+    
+    
+}
+@media (max-width:650px) {
+    
+    .hero-name{
+    font-size: 35px;
+    max-width: 350px;
+    margin: auto;
+    }
+    .hero{
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -2.4rem;
+        margin-bottom: -11.5rem;
+        
+    }
+    
+}

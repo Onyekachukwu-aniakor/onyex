@@ -1,0 +1,86 @@
+.table{
+    width: min(900px, 100% - 3rem);
+    display: block;
+    overflow: hidden;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin: 1rem;
+    overflow-x: auto;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+
+}
+.table th, .table td{
+    padding: 2rem;
+    /* border: 0.7px solid #ddd; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table-caption{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000f38;
+    margin: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* tr:nth-of-type(2n){
+    background: hsl(100, 90%, 120%/ 0.7);
+} */
+
+.table-head{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #000f38;
+}
+
+@media (max-width:650px){
+th {
+    display: none;
+      
+}
+ td{
+    display: grid;
+    grid-template-columns: 10ch auto;
+    gap: 0.2rem;
+    padding: 0.1rem 0.3rem;
+
+}
+ td:first-child{
+    
+    padding-top: 0.1rem;
+
+}
+ td:last-child{
+    
+    border-bottom: 1px solid #000;
+
+}
+td::before{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+td:nth-of-type(1)::before{
+    content: "title" ":  ";
+}
+td:nth-of-type(2)::before{
+    content: "first Name" ":  ";
+}
+td:nth-of-type(3)::before{
+    content: "last Name"  ":  ";
+}
+td:nth-of-type(4)::before{
+    content: "location"  ":  ";
+}
+td:nth-of-type(5)::before{
+    content: "status"  ":  ";
+}
+
+}
