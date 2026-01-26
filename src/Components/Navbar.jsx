@@ -18,12 +18,16 @@ const Navbar = () => {
             <li><Link to="hero"
                smooth={true}
                offset={0}
+               //offet defines the distance(pixels) bw viewport top and target element 
+               // 4 precise scroll positioning
                duration={500}>Home</Link></li>
             <li><Link to="about"
                smooth={true}
                offset={0}
                duration={500}>About Us</Link> </li>
-            <li><Link to="executives" smooth={true}
+            <li><Link 
+            to="executives" 
+            smooth={true}
                offset={-260}
                duration={500}>Executives</Link></li>
             {/* <li><Link to="members" smooth={true}

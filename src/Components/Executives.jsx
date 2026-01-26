@@ -12,20 +12,20 @@ import nexts from "../assets/images/next.png"
 
 const Executives = () => {
     const slider = useRef();
-    let tX = 0;
+    let tx = 0;
 
     const slideForward = ()=>{
-          if(tX > -50) {
-             tX -= 25  
+          if(tx > -50) {
+             tx -= 25  
           }
-        slider.current.style.transform= `translateX(${tX}%)`
+        slider.current.style.transform= `translateX(${tx}%)`
 
     }
     const slideBackward = ()=> {
-        if(tX < 0) {
-             tX +=25  
+        if(tx < 0) {
+             tx +=25  
         }  
-        slider.current.style.transform= `translateX(${tX}%)`;
+        slider.current.style.transform= `translateX(${tx}%)`;
 
 
     }
