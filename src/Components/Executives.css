@@ -69,6 +69,7 @@
     
     .slider ul li{
         padding: 10px;
+        box-shadow: none;
     }
     .slide{
         padding: 10px;
