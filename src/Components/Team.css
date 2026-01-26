@@ -22,6 +22,8 @@
     .execos{
         flex-direction: column;
         flex-basis: 100%;
+        margin-top: 0;
+        
     }
     .exe{
         margin-bottom: 0.7rem;
