@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .hero-name{
@@ -52,7 +53,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: -3.3rem;
-        margin-bottom: -8.2rem;
+        margin-bottom: -7.2rem;
         
     }
     
